@@ -46,7 +46,7 @@ class Script:
                             tag = cls.hangup_action('hangup_null')  # проблемы с распознаванием КОНЕЦ
 
                 else:
-                    next_func()  # LogicActions.recommend() # Готовы рекомендовать?..ПЕРЕХОД к др методу
+                    next_func()  # Script.recommend() # Готовы рекомендовать?..ПЕРЕХОД к др методу
                     break
 
     @classmethod
