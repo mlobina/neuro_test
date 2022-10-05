@@ -12,7 +12,7 @@ class LogicActions:
         while tag not in action_tag_mapping.values():
 
             if answer == 'Да':
-                next_func()  # MainLogicActions.recommend() # Готовы рекомендовать...ПЕРЕХОД к др классу
+                next_func()  # LogicActions.recommend() # Готовы рекомендовать...ПЕРЕХОД к др методу
                 break
 
             if answer == '':
@@ -34,7 +34,7 @@ class LogicActions:
                 answer = input_answer(hello_logic.hello_repeat) # вам удобно говорить
 
             else:
-                next_func()  # MainLogicActions.recommend() # Готовы рекомендовать...ПЕРЕХОД к др классу
+                next_func()  # LogicActions.recommend() # Готовы рекомендовать...ПЕРЕХОД к др методу
                 break
 
     @classmethod
@@ -59,7 +59,7 @@ class LogicActions:
                 answer = input_answer(main_logic.recommend_score_neutral)  # от 0-10 оцените
 
             elif answer == 'Нет':
-                answer = input_answer(main_logic.recommend_score_negative)  # 9-10
+                answer = input_answer(main_logic.recommend_score_negative)  # 0 -7
 
             elif answer == 'Ещё раз':
                 answer = input_answer(main_logic.recommend_repeat)  # Как бы вы оценили....
